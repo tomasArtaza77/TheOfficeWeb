@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from office import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('office.urls')), 
+    path('seasons/', include('seasons.urls')), #enlazo urls de la App seasons  
     
 ]
